@@ -1,0 +1,22 @@
+# Laravel
+/vendor
+/node_modules
+/public/storage
+/storage/*.key
+/storage/*.log
+/.env
+.phpunit.result.cache
+Homestead.yaml
+Homestead.json
+
+# IDEs
+.idea
+
+# Composer
+/composer.lock
+
+# Laravel Debug
+*.log
+
+# Log files
+*.log
