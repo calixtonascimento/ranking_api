@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateMovementsTable extends Migration
+class CreateMovementTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,9 +14,8 @@ class CreateMovementsTable extends Migration
     public function up()
     {
         Schema::create('movement', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id'); // Usar increments em vez de id() para versões anteriores
             $table->string('name');
-            $table->timestamps();
         });
     }
 
